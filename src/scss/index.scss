@@ -1,0 +1,41 @@
+@import "./global.scss";
+
+$hover-color: #FF6768;
+
+body {
+    font-family: "Montserrat", sans-serif;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 230px;
+    margin-bottom: 5rem;
+}
+
+.link {
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: #000;
+    letter-spacing: 1px;
+    border-bottom: .1rem solid transparent;
+    transition: .3s;
+
+    &:not(:last-child) {
+        margin-right: 3rem;
+    }
+
+    &:hover {
+        color: $hover-color;
+        border-bottom-color: $hover-color;
+    }
+}

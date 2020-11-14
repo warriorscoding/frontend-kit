@@ -1,0 +1,1 @@
+console.log("hello this is a hello from global.js")
